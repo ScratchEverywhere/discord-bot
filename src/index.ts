@@ -89,6 +89,6 @@ client.on("messageCreate", async (message: Message) => {
 
 client.login(Bun.env.DISCORD_TOKEN);
 
-client.once("ready", () => {
+client.once("clientReady", () => {
   console.log("Bot is online!");
 });
