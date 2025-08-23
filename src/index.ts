@@ -43,14 +43,27 @@ client.on("messageCreate", async (message: Message) => {
         `- \`${name}\`: ${info.description}\n`
       ).join(""),
     };
-  } else command = commands[commandName as keyof typeof commands];
+  } else {
+    command = commands[commandName as keyof typeof commands];
+    if (args.length != command.args) {
+      message.reply(
+        "Incorrect number of arguments for: `" + commandName + "`.",
+      );
+      return;
+    }
+  }
 
   if (command) {
     try {
       const embed = new EmbedBuilder().setColor(0x754D75).setTitle(
         command.title,
       )
-        .setDescription(command.body);
+        .setDescription(
+          args.reduce(
+            (body, arg, i) => body.replaceAll(`{arg${i}}`, arg),
+            command.body,
+          ),
+        );
 
       if (message.reference && message.reference.messageId) {
         message.channel.send({
