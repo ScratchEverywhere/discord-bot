@@ -35,7 +35,15 @@ client.on("messageCreate", async (message: Message) => {
 
   if (!commandName) return;
 
-  const command = commands[commandName as keyof typeof commands];
+  let command;
+  if (commandName == "help") {
+    command = {
+      title: "Help",
+      body: Object.entries(commands).map(([name, info]) =>
+        `- \`${name}\`: ${info.description}\n`
+      ).join(""),
+    };
+  } else command = commands[commandName as keyof typeof commands];
 
   if (command) {
     try {
