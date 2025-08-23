@@ -10,5 +10,11 @@
     "body": "This seems to be a duplicate of [#{arg0}](https://github.com/NateXS/Scratch-Everywhere/issues/{arg0}) on GitHub",
     "description": "Tells users that there's already a thread on GitHub.",
     "args": 1
+  },
+  "pr": {
+    "title": "Pull Request",
+    "body": "There seems to be a pull request that adds this: [#{arg0}](https://github.com/NateXS/Scratch-Everywhere/pull/{arg0})",
+    "description": "Tells users that there's a pull request that adds a feature they're asking for.",
+    "args": 1
   }
 }
