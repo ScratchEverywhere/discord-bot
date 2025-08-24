@@ -28,5 +28,5 @@ export const setupReleases = (client: Client) => {
         currentVersion,
       );
     }
-  }, 10000);
+  }, 150000);
 };
