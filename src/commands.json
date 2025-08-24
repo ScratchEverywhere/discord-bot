@@ -1,5 +1,6 @@
 {
   "roadmap": {
+    "type": "text",
     "title": "Roadmap",
     "body": "It seems like you've requested something that is already on the roadmap. Please keep in mind we do this in our free time for free, so please be patient.",
     "description": "Tells users that something is already on the roadmap.",
@@ -7,14 +8,23 @@
   },
   "duplicate": {
     "title": "Duplicate",
+    "type": "text",
     "body": "This seems to be a duplicate of [#{arg0}](https://github.com/NateXS/Scratch-Everywhere/issues/{arg0}) on GitHub",
     "description": "Tells users that there's already a thread on GitHub.",
     "args": 1
   },
   "pr": {
     "title": "Pull Request",
+    "type": "text",
     "body": "There seems to be a pull request that adds this: [#{arg0}](https://github.com/NateXS/Scratch-Everywhere/pull/{arg0})",
     "description": "Tells users that there's a pull request that adds a feature they're asking for.",
     "args": 1
+  },
+  "controls": {
+    "title": "Controls",
+    "type": "image",
+    "body": "https://github.com/NateXS/Scratch-Everywhere/blob/main/scratch%203ds%20controls.png?raw=true",
+    "description": "Shows an image of the controls.",
+    "args": 0
   }
 }

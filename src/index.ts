@@ -61,13 +61,20 @@ client.on("messageCreate", async (message: Message) => {
     try {
       const embed = new EmbedBuilder().setColor(0x754D75).setTitle(
         command.title,
-      )
-        .setDescription(
-          args.reduce(
-            (body, arg, i) => body.replaceAll(`{arg${i}}`, arg),
-            command.body,
-          ),
-        );
+      );
+      switch (command.type) {
+        case "text":
+          embed.setDescription(
+            args.reduce(
+              (body, arg, i) => body.replaceAll(`{arg${i}}`, arg),
+              command.body,
+            ),
+          );
+          break;
+        case "image":
+          embed.setImage(command.body);
+          break;
+      }
 
       if (message.reference && message.reference.messageId) {
         message.channel.send({
