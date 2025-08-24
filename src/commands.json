@@ -26,5 +26,12 @@
     "body": "https://github.com/NateXS/Scratch-Everywhere/blob/main/scratch%203ds%20controls.png?raw=true",
     "description": "Shows an image of the controls.",
     "args": 0
+  },
+  "platforms": {
+    "title": "Platform Support",
+    "type": "text",
+    "body": "Please see [#166](https://github.com/NateXS/Scratch-Everywhere/issues/166) on GitHub for anything related to porting to other platforms.",
+    "description": "Links to our tracking issue on platform support.",
+    "args": 0
   }
 }
