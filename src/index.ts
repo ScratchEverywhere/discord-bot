@@ -103,7 +103,9 @@ client.on("messageCreate", async (message: Message) => {
       message.reply({ embeds: [embed] });
     } catch (error) {
       console.error(error);
-      message.reply("There was an error while executing: " + commandName);
+      message.reply(
+        `There was an error while executing: \`${commandName}\``,
+      );
     }
   }
 });
