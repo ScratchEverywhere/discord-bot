@@ -50,6 +50,7 @@ client.on("messageCreate", async (message: Message) => {
     };
   } else {
     command = commands[commandName as keyof typeof commands];
+    if (!command) return;
     if (args.length != command.args) {
       message.reply(
         "Incorrect number of arguments for: `" + commandName + "`.",
