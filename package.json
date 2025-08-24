@@ -1,8 +1,11 @@
 {
   "name": "scratch-everywhere-bot",
-  "module": "index.ts",
+  "module": "src/index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "dev": "bun src/index.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
