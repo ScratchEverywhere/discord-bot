@@ -6,6 +6,7 @@ import {
   Partials,
 } from "discord.js";
 import commands from "./commands.json";
+import { setupReleases } from "./releases";
 
 const prefixes = ["!", "."];
 
@@ -98,6 +99,7 @@ client.on("messageCreate", async (message: Message) => {
 
 client.login(Bun.env.DISCORD_TOKEN);
 
-client.once("clientReady", () => {
+client.once("clientReady", async () => {
+  await setupReleases(client);
   console.log("Bot is online!");
 });
