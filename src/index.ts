@@ -70,12 +70,23 @@ client.on("messageCreate", async (message: Message) => {
           embed.setDescription(
             args.reduce(
               (body, arg, i) => body.replaceAll(`{arg${i}}`, arg),
-              command.body,
+              command.body as string,
             ),
           );
           break;
         case "image":
-          embed.setImage(command.body);
+          embed.setImage(command.body as string);
+          break;
+        case "lookup":
+          if (command.args != 1) {
+            console.warn("Invalid command: " + commandName);
+            break;
+          }
+          embed.setDescription(
+            (command.body as { [arg: string]: string })[
+              args[0] as string
+            ] as string,
+          );
           break;
       }
 
