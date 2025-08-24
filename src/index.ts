@@ -38,6 +38,7 @@ client.on("messageCreate", async (message: Message) => {
   let command;
   if (commandName == "help") {
     command = {
+      type: "text",
       title: "Help",
       body: args[0] == null
         ? Object.entries(commands).map(([name, info]) =>
