@@ -51,5 +51,12 @@
     },
     "description": "Redirects people to the appropriote homebrew discord server.",
     "args": 1
+  },
+  "guide": {
+    "title": "Homebrew Guide",
+    "type": "text",
+    "body": "Go to https://{arg0}.hacks.guide to learn how to homebrew your {arg0}.",
+    "description": "Redirects people to the appropriote homebrew guide.",
+    "args": 1
   }
 }
