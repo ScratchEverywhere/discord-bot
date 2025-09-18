@@ -119,7 +119,7 @@ client.on("messageCreate", async (message: Message) => {
         });
         return;
       }
-      message.reply({ embeds: [embed] });
+      message.channel.send({ embeds: [embed] });
     } catch (error) {
       console.error(error);
       message.reply(
