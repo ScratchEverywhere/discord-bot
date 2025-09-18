@@ -58,5 +58,47 @@
     "body": "Go to https://{arg0}.hacks.guide to learn how to homebrew your {arg0}.",
     "description": "Redirects people to the appropriote homebrew guide.",
     "args": 1
+  },
+  "rule": {
+    "title": "{lookup}",
+    "titleLookup": {
+      "1": "Be Respectful",
+      "2": "No NSFW Content",
+      "3": "No Spam or Advertising",
+      "4": "English Only",
+      "5": "Don't be a Jerk",
+      "respect": "{alias=1}",
+      "nsfw": "{alias=2}",
+      "ad": "{alias=3}",
+      "advertisement": "{alias=3}",
+      "advertising": "{alias=3}",
+      "promotion": "{alias=3}",
+      "self-promotion": "{alias=3}",
+      "language": "{alias=4}",
+      "english": "{alias=4}",
+      "english-only": "{alias=4}",
+      "jerk": "{alias=5}"
+    },
+    "type": "lookup",
+    "body": {
+      "1": "Treat everyone with respect. Absolutely no harassment, witch hunting, sexism, racism, or hate speech will be tolerated.",
+      "2": "No age-restricted or obscene content. This includes text, images, or links featuring nudity, sex, hard violence, or other graphically disturbing content.",
+      "3": "No spam or self-promotion (server invites, advertisements, etc) without permission from a staff member. This includes DMing fellow members without permission from them. Server Invites are allowed to redirect people to better places to get help for specific issues.",
+      "4": "Please keep conversations in this server English only. It's perfectly fine to use a translator like Google Translate, this just makes moderation easier.",
+      "5": "Don't be a jerk. We work on this in our free time for free, so please be patient. If we ask you a question and you don't give us an answer, don't expect us to help you.",
+      "respect": "{alias=1}",
+      "nsfw": "{alias=2}",
+      "ad": "{alias=3}",
+      "advertisement": "{alias=3}",
+      "advertising": "{alias=3}",
+      "promotion": "{alias=3}",
+      "self-promotion": "{alias=3}",
+      "language": "{alias=4}",
+      "english": "{alias=4}",
+      "english-only": "{alias=4}",
+      "jerk": "{alias=5}"
+    },
+    "description": "Says a specific rule.",
+    "args": 1
   }
 }

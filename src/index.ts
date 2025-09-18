@@ -62,8 +62,26 @@ client.on("messageCreate", async (message: Message) => {
 
   if (command) {
     try {
+      let title = command.title;
+      if (title === "{lookup}") {
+        if (command.args != 1) {
+          throw new Error("Invalid command: " + commandName);
+        }
+        title = (command.titleLookup as { [arg: string]: string })[
+          args[0] as string
+        ] as string;
+        while (/^{alias=\S+}$/.test(title)) {
+          title = command.titleLookup[title.substring(7, title.length - 1)];
+        }
+      } else {
+        title = args.reduce(
+          (title, arg, i) => title.replaceAll(`{arg${i}}`, arg),
+          command.title as string,
+        );
+      }
+
       const embed = new EmbedBuilder().setColor(0x754D75).setTitle(
-        command.title,
+        title,
       );
       switch (command.type) {
         case "text":
@@ -79,14 +97,15 @@ client.on("messageCreate", async (message: Message) => {
           break;
         case "lookup":
           if (command.args != 1) {
-            console.warn("Invalid command: " + commandName);
-            break;
+            throw new Error("Invalid command: " + commandName);
           }
-          embed.setDescription(
-            (command.body as { [arg: string]: string })[
-              args[0] as string
-            ] as string,
-          );
+          let body = (command.body as { [arg: string]: string })[
+            args[0] as string
+          ] as string;
+          while (/^{alias=\S+}$/.test(body)) {
+            body = command.body[body.substring(7, body.length - 1)];
+          }
+          embed.setDescription(body);
           break;
       }
 
