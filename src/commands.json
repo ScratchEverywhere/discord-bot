@@ -41,15 +41,23 @@
     "description": "Explains the limitations of the project.",
     "args": 0
   },
-  "redirect": {
-    "title": "Homebrew Support",
+  "invite": {
+    "title": "{lookup}",
+    "titleLookup": {
+      "nintendo": "Nintendo Homebrew",
+      "vita": "Vita Homebrew",
+      "4tu": "For The Users",
+      "fortheusers": "{alias=4tu}"
+    },
     "type": "lookup",
     "body": {
       "nintendo": "https://discord.gg/C29hYvh",
       "vita": "https://discord.gg/AQc7KWG",
-      "wiiu": "https://discord.com/invite/bZ2rep2"
+      "wiiu": "https://discord.com/invite/bZ2rep2",
+      "4tu": "https://discord.gg/z8wBTvU",
+      "fortheusers": "{alias=4tu}"
     },
-    "description": "Redirects people to the appropriote homebrew discord server.",
+    "description": "Invites to some discord servers.",
     "args": 1
   },
   "guide": {
