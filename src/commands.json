@@ -38,7 +38,7 @@
     "title": "{lookup}",
     "titleLookup": {
       "3ds": "3DS Screen Modes",
-      "wii u": "Wii U Screen Modes",
+      "wiiu": "Wii U Screen Modes",
       "wii": "No Special Features",
       "gamecube": "No Special Features",
       "switch": "No Special Features",
@@ -47,7 +47,7 @@
     "type": "lookup",
     "body": {
       "3ds": "Resolution 400x480 enables both screens. 400x240 and 320x240 display to top and bottom screens respectively.",
-      "wii u": "Displaying across the TV and Gamepad are currently unsupported",
+      "wiiu": "Displaying across the TV and Gamepad are currently unsupported",
       "wii": "There are currently no special features for this platform",
       "gamecube": "There are currently no special features for this platform",
       "switch": "There are currently no special features for this platform",
