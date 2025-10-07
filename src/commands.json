@@ -42,7 +42,7 @@
       "wii": "No Special Features",
       "gamecube": "No Special Features",
       "switch": "No Special Features",
-      "vita": "No Special Features",
+      "vita": "No Special Features"
     },
     "type": "lookup",
     "body": {
@@ -51,7 +51,7 @@
       "wii": "There are currently no special features for this platform",
       "gamecube": "There are currently no special features for this platform",
       "switch": "There are currently no special features for this platform",
-      "vita": "There are currently no special features for this platform",
+      "vita": "There are currently no special features for this platform"
     },
     "description": "Provides special features for given platforms.",
     "args": 1
