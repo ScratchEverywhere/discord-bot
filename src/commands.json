@@ -34,7 +34,7 @@
     "description": "Links to our tracking issue on platform support.",
     "args": 0
   },
-  "feature": {
+  "features": {
     "title": "{lookup}",
     "titleLookup": {
       "3ds": "3DS Screen Modes",
