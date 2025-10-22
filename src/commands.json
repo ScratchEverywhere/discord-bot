@@ -83,8 +83,14 @@
   },
   "guide": {
     "title": "Homebrew Guide",
-    "type": "text",
-    "body": "Go to https://{arg0}.hacks.guide to learn how to homebrew your {arg0}.",
+    "type": "lookup",
+    "body": {
+      "wiiu": "Go to https://wiiu.hacks.guide to learn how to homebrew your Wii U.",
+      "wii": "Go to https://wii.hacks.guide to learn how to homebrew your Wii.",
+      "vita": "Go to https://vita.hacks.guide to learn how to homebrew your PS Vita.",
+      "3ds": "Go to https://3ds.hacks.guide to learn how to homebrew your 3DS.",
+      "switch": "Go to https://switch.hacks.guide to learn how to homebrew your Switch."
+    },
     "description": "Redirects people to the appropriote homebrew guide.",
     "args": 1
   },
