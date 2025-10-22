@@ -42,7 +42,8 @@
       "wii": "No Special Features",
       "gamecube": "No Special Features",
       "switch": "No Special Features",
-      "vita": "No Special Features"
+      "vita": "No Special Features",
+      "nx": "{alias=switch}"
     },
     "type": "lookup",
     "body": {
@@ -51,7 +52,8 @@
       "wii": "There are currently no special features for this platform",
       "gamecube": "There are currently no special features for this platform",
       "switch": "There are currently no special features for this platform",
-      "vita": "There are currently no special features for this platform"
+      "vita": "There are currently no special features for this platform",
+      "nx": "{alias=switch}"
     },
     "description": "Provides special features for given platforms.",
     "args": 1
@@ -89,7 +91,8 @@
       "wii": "Go to https://wii.hacks.guide to learn how to homebrew your Wii.",
       "vita": "Go to https://vita.hacks.guide to learn how to homebrew your PS Vita.",
       "3ds": "Go to https://3ds.hacks.guide to learn how to homebrew your 3DS.",
-      "switch": "Go to https://switch.hacks.guide to learn how to homebrew your Switch."
+      "switch": "Go to https://switch.hacks.guide to learn how to homebrew your Switch.",
+      "nx": "{alias=switch}"
     },
     "description": "Redirects people to the appropriote homebrew guide.",
     "args": 1
