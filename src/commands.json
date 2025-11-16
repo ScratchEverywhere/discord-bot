@@ -62,6 +62,7 @@
     "title": "Limitations",
     "type": "text",
     "body": "Scratch Everywhere!'s limitations can be found in [the readme here](https://github.com/ScratchEverywhere/ScratchEverywhere/tree/main#limitations).",
+    "description": "Links to the limitations in the README.",
     "args": 0
   },
   "invite": {
