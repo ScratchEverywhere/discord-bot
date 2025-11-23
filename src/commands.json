@@ -23,9 +23,9 @@
   "controls": {
     "title": "Controls",
     "type": "image",
-    "body": "https://github.com/ScratchEverywhere/ScratchEverywhere/blob/main/docs/controls.png?raw=true",
-    "description": "Shows an image of the controls.",
-    "args": 0
+    "body": "https://github.com/ScratchEverywhere/ScratchEverywhere/blob/main/docs/controls/{arg0}.png?raw=true",
+    "description": "Shows an image of the controls for each platform.",
+    "args": 1
   },
   "platforms": {
     "title": "Platform Support",

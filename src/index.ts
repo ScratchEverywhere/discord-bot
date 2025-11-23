@@ -93,7 +93,12 @@ client.on("messageCreate", async (message: Message) => {
           );
           break;
         case "image":
-          embed.setImage(command.body as string);
+          embed.setImage(
+            args.reduce(
+              (body, arg, i) => body.replaceAll(`{arg${i}}`, arg),
+              command.body as string,
+            ),
+          );
           break;
         case "lookup":
           if (command.args != 1) {
