@@ -20,7 +20,7 @@ export const setupReleases = (client: Client) => {
         const embed = new EmbedBuilder().setColor(0x754D75).setTitle(
           (release as { name: string }).name,
         ).setDescription((release as { body: string }).body);
-        client.channels.cache.get("1409246225366253640").send({
+        client.channels.cache.get(Bun.env.UPDATES_CHANNEL_ID).send({
           embeds: [embed],
         });
         currentVersion = (release as { tag_name: string }).tag_name.trim();
