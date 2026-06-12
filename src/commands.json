@@ -71,7 +71,11 @@
       "nintendo": "Nintendo Homebrew",
       "vita": "Vita Homebrew",
       "4tu": "For The Users",
-      "fortheusers": "{alias=4tu}"
+      "fortheusers": "{alias=4tu}",
+      "nitrobolt": "Nitrobolt",
+      "nb": "{alias=nitrobolt}",
+      "warpdrive": "Warpdrive",
+      "wd": "{alias=warpdrive}"
     },
     "type": "lookup",
     "body": {
@@ -79,7 +83,11 @@
       "vita": "https://discord.gg/AQc7KWG",
       "wiiu": "https://discord.com/invite/bZ2rep2",
       "4tu": "https://discord.gg/z8wBTvU",
-      "fortheusers": "{alias=4tu}"
+      "fortheusers": "{alias=4tu}",
+      "nitrobolt": "https://discord.gg/gaxd7kcvry",
+      "nb": "{alias=nitrobolt}",
+      "warpdrive": "https://discord.gg/vhqZxWpuP4",
+      "wd": "{alias=warpdrive}"
     },
     "description": "Invites to some discord servers.",
     "args": 1
