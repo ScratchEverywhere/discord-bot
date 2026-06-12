@@ -4,6 +4,8 @@ import { type Client, EmbedBuilder } from "discord.js";
 let currentVersion = await Bun.file("current-version.txt").text();
 
 export const setupReleases = (client: Client) => {
+  return;
+  
   setInterval(async () => {
     try {
       const res = await fetch(
